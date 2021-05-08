@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -13,7 +14,7 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: #0779e4;
   text-decoration: none;
 }
 
@@ -28,4 +29,67 @@ ol, ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+ol::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+ol::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px hsla(209, 94%, 46%, 0.164);
+}
+ 
+ol::-webkit-scrollbar-thumb {
+  background-color: #065eb1c4;
+  outline: 1px solid rgba(0, 0, 0, 0);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+ol.items {
+  max-height: 80vh;
+  overflow-y: scroll;
+  padding: 10px
+}
+
+.item-row {
+  padding: 30px;
+  background-color: #0779e4;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.item-info {
+  display: flex;
+  gap: .5rem;
+  margin-top: 5px;
+}
+.item-image {
+  width: 20%;
+}
+.item-description {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+@media screen and (max-width: 767px) {
+  .item-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .item-image {
+    width: 100%;
+  }
 }
