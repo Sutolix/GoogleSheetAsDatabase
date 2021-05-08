@@ -1,7 +1,7 @@
 import Home from '../screens/Home'
 
 export async function getServerSideProps() {
-  const dadosDaApi = await fetch(process.env.API_URL)
+  const dadosDaApi = await fetch(`${process.env.BASE_API_URL}/api/jogos`)
   .then((res) => {
     if(res.ok) {
       return res.json()
