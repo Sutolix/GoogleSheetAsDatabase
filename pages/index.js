@@ -11,8 +11,6 @@ export async function getServerSideProps() {
     return res
   })
   
-  console.log(`process.env.BASE_API_URL}/api/jogos`);
-  
   return {
     props: {
       jogos: dadosDaApi.games
