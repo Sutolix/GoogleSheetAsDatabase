@@ -106,5 +106,9 @@ ol.items {
   }
   .item-image {
     width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
   }
 }
