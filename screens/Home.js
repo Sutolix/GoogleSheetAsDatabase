@@ -1,8 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 
-import previewImage from '../public/images/wild.png'
-
 function Home({ jogos }) {
   return (
     <>
@@ -13,7 +11,7 @@ function Home({ jogos }) {
         <meta property="og:site_name" content="GS.db" key="ogsitename" />
         <meta property="og:title" content="Um experimento qualquer" key="title" />
         <meta property="og:description" content="Gerando uma api com Next.js" key="ogdesc" />
-        <meta property="og:image" content={previewImage} key="ogimage" />
+        <meta property="og:image" content="https://i.pinimg.com/736x/b5/5e/83/b55e838c3efa6facd7aab1c8789acc29.jpg" key="ogimage" />
       </Head>
       <main className="container">
         <h1>Google Sheets</h1>
