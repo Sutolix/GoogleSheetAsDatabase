@@ -14,8 +14,6 @@ export default async function(req, res) {
   const sheet = doc.sheetsByIndex[0]
   const rows = await sheet.getRows()
 
-  console.log(rows)
-
   const jogos = rows.map(({nome, imagem_capa, 'descrição': descricao}) => {
       return {
         nome,
