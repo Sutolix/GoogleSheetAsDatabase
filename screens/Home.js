@@ -1,12 +1,19 @@
 import React from 'react'
 import Head from 'next/head'
 
+import previewImage from '../public/images/wild.png'
+
 function Home({ jogos }) {
   return (
     <>
       <Head>
         <title>Google Sheets</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="utf-8" />
+        <meta property="og:site_name" content="GS.db" key="ogsitename" />
+        <meta property="og:title" content="Um experimento qualquer" key="title" />
+        <meta property="og:description" content="Gerando uma api com Next.js" key="ogdesc" />
+        <meta property="og:image" content={previewImage} key="ogimage" />
       </Head>
       <main className="container">
         <h1>Google Sheets</h1>
