@@ -1,8 +1,6 @@
 import React from 'react'
 
 function Home({ jogos }) {
-  console.log(jogos)
-
   return (
     <main>
       <h1>Google Sheets</h1>
