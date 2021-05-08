@@ -26,7 +26,10 @@ function Home({ jogos }) {
                   <div className="item-image">
                     <img src={jogo.imagem_capa} alt={`Capa do jogo: ${jogo.nome}`} />
                   </div>
-                  <p className="item-description">{jogo.descricao}</p>
+                  <div className="item-content">
+                    <p className="item-description">{jogo.descricao}</p>
+                    <a className="item-about" href={jogo.sobre} target="_blank" rel="noopener noreferrer">Saiba mais</a>
+                  </div>
                 </div>
               </li>
             )

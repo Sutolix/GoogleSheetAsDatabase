@@ -14,11 +14,12 @@ export default async function(req, res) {
   const sheet = doc.sheetsByIndex[0]
   const rows = await sheet.getRows()
 
-  const jogos = rows.map(({nome, imagem_capa, 'descrição': descricao}) => {
+  const jogos = rows.map(({nome, imagem_capa, 'descrição': descricao, sobre}) => {
       return {
         nome,
         imagem_capa,
-        descricao
+        descricao,
+        sobre
       }
   })
 
